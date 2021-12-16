@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap');
+/* font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; */
+
+html {
+    background-image: linear-gradient(#FC5E55, #FA4083);
+}
+
+body {
+    background-image: url(./icons/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.container {
+    width:  1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    border-bottom: 1px solid white;
+}
+.navbutton {
+    display: inline-block;
+    margin-left: 25px;
+    border: 1px solid white;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.navbutton .dropdown {
+    border-color: #fff;
+    position: absolute;
+    margin: 20px 0 0 -25px;
+    text-align: center;
+  background-color: #fff;
+ visibility: hidden;
+ transition-duration: 0.2s;
+}
+.navbutton:hover .dropdown {
+visibility: visible;
+}
+.dropdown .navbutton a {
+    color: #FA4083;
+    text-align: center;
+}
+.dorpdown .navbutton:hover {
+    background-color: #000;
+}
+main {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.mainbox1{
+    flex: 2;
+    padding-right: 40px;
+    color: white;
+}
+
+.mainbox2 {
+    flex: 1;
+}
+.mainbox2 img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 3.125rem;
+  
+}
+ 
+.cards {
+    height: 300px;      
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.cards div {
+    width: 30%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    block-size: cover;
+    text-align: center;
+    color: white;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0,0.23);
+    transition: all 0.5s ease-in-out;
+}
+
+.cards div:hover {
+    transform: scale3d(105%);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0,0.23);
+}
+
+.cards1 {
+    background-image: url(./larger-images/image-background-card1-b.jpg);
+}
+.cards2 {
+    background-image: url(./larger-images/image-background-card2-b.jpg);
+}
+
+.cards3 {
+    background-image: url(./larger-images/image-background-card3-b.jpg);                                        
+}
+
+ .cards div h2 {
+    font-size: 35px;
+   margin-top: 10px;
+}
+
+.cards div  p{
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.cards div img {
+    margin-top: 20px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0; 
+}
+
+.testimonials p {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 40%;
+    padding: 4%;
+    text-shadow: rgba(0, 0, 0,0.23) 5px;  ;
+}
+span {
+    line-height: 2;
+    margin-left: 20px;
+    font-size: 90%;
+}
+
+/*  Conatct Us */
+
+.contact {
+    display: block;
+    color: white;
+}
+
+form {
+    margin: 30px 0;
+}
+
+.inputwrapper {
+margin-bottom: 20px;
+}
+
+input[type="text"], input[type=email], textarea{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+label[for=phone] {
+    margin-top: 20px;
+}
